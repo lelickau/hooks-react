@@ -4,15 +4,13 @@ import './hover.css'
 
 const Hover: FC = () => {
 
-    const refOne = useRef<HTMLDivElement>(null)
-    const isHoveringOneRef = useHover(refOne)
-    const refTwo = useRef<HTMLDivElement>(null)
-    const isHoveringTwoRef = useHover(refTwo)
+    const hoverRef = useRef<HTMLDivElement>(null)
+    const isHoveringTwoRef = useHover(hoverRef)
 
     return (
         <div className="wrapper">
             <div
-                ref={refTwo}
+                ref={hoverRef}
                 className={`hover__item pulse ${isHoveringTwoRef && 'hard'}`}
                 style={{
                     border: `20px solid ${isHoveringTwoRef ? '#ff793f' : '#7ed6df'}`,

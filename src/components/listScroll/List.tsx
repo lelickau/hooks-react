@@ -20,7 +20,7 @@ const List = () => {
         fetchTodos(page, limit)
     }, [page, limit])
 
-    const intersected = useScroll(parentRef, childRef, callback)
+    useScroll(parentRef, childRef, callback)
 
     function fetchTodos (page: number, limit: number) {
         fetch(`https://jsonplaceholder.typicode.com/todos?_limit=${limit}&_page=${page}`)
