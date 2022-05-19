@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { ChangeEvent, FocusEvent, useEffect, useState } from "react"
 
 interface IValidation {
