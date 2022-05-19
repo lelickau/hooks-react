@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #1a1b1f;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    font-size: 16px;
+}
+
+pre {
+    width: 85vw;
+    position: relative;
+    display: block;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    background: #272822;
+    padding: 1em;
+    margin: 0 auto;
+    overflow: auto;
+    border-radius: 0.3em;
+    color: #f8f8f2;
+    text-shadow: 0 1px rgb(0 0 0 / 30%);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    padding-top: 40px;
+}
+
+pre::after {
+    top: 0;
+    left: 0;
+    padding: 7px;
+    background-color: #fff;
+    position: absolute;
+    content: 'ts';
+    font-weight: 700;
+    font-size: 16px;
+    color: #272822;
+    border-bottom-right-radius: 9px;
+}
+
+code {
+    color: #f8f8f2;
+    background: none;
+    text-shadow: 0 1px rgb(0 0 0 / 30%);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+.keyword {
+    color: #c76ec2;
+}
+
+.punctuation {
+    color: #ffff59;
+}
+
+.string {
+    color: #a6e22e;
+}
+
+.box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fun {
+    color: #668aff;
+}
+
+.boolean {
+    color: #ffca59;
+}
+
+.dbox {
+    color: #f86b6b;
+}
+
+.bracket {
+    color: #817b9b;
+}
+
+.code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 2px;
+    margin: 0 2px;
+    font-size: 16px;
+    background-color: rgb(240, 240, 240);
+    font-weight: 400;
+}
+
+.title {
+    position: relative;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text {
+    margin: 15px 0 15px 0;
+}
+
+.list-p {
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.list-p::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(85, 145, 202);
+    left: -14px;
+    top: 7px;
+}

@@ -1,0 +1,11 @@
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.content {
+    margin-bottom: 25px;
+}
+
