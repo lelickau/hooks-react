@@ -36,7 +36,7 @@ const Home: FC = () => {
                 <UseInput/>
             </article>
             <article className="content">
-                <h3 className="subtitle">Импользование</h3>
+                <h3 className="subtitle">Использование</h3>
                 <p className="text">Воспользуемся хуком useInput. Вызываем его для констант email и password. Параметрами передаем дефолтное значение <span className="code">value</span> и объект с набором валидаций (<span className="code">minLength, isEmpty, isEmail</span> - в константе email). Так как хук возвращает значение <span className="code">value</span> и функции, мы можем через созданные константы воспользоваться обработчиками <span className="code">onChange</span> и <span className="code">onBlur</span> в input, передав в них событие <span className="code">event</span>.</p>
                 <UseInputUse/>
             </article>
@@ -61,7 +61,7 @@ const Home: FC = () => {
                 <UseScroll/>
             </article>
             <article className="content">
-                <h3 className="subtitle">Импользование</h3>
+                <h3 className="subtitle">Использование</h3>
                 <p className="text">В компоненте Todos c помощью <span className="code">useState</span> инициализируем состояние todos, в котором будет храниться массив с объектами todo, по умолчанию это будет пустой массив. Затем в разметке на корневой div задаем <span className="code">ref</span> равный <span className="code">parentRef</span>, далее  итерируемся по массиву todos с помощью функции map и для каждого элемента итерации отрисовываем блок div, в котором будет содержаться номер todo (id) и описание (title). В конец добавляем блок div с <span className="code">ref</span> равным <span className="code">childRef</span> (этот div будет условно "запускать" функцию callback, которая отправит запрос на сервер для получения новой порции данных.)</p>
                 <p className="text">
                     Инициализируем состояние <span className="code">page</span>, которое будет равно по умолчанию <span className="code">1</span> - это состояние будет хранить номер страницы.
@@ -90,7 +90,7 @@ const Home: FC = () => {
                 <UseHover/>
             </article>
             <article className="content">
-                <h3 className="subtitle">Импользование</h3>
+                <h3 className="subtitle">Использование</h3>
                 <p className="text">Создаем референс hoverRef с помощью react хука <span className="code">useRef</span>, передаем его в jsx разметку атрибутом. Получаем значение <span className="code">isHoveringRef</span> через кастомный хук <span className="code">useHover</span> и в атрибутe <span className="code">style</span> делаем проверку, если пользователь навелся на элемент (isHoveringRef === true) background окрасится в красный, иначе в синий.</p>
                 <UseHoverUse/>
             </article>
@@ -111,7 +111,7 @@ const Home: FC = () => {
                 <UseDebounce/>
             </article>
             <article className="content">
-                <h3 className="subtitle">Импользование</h3>
+                <h3 className="subtitle">Использование</h3>
                 <p className="text">Создаем состояние value с помощью react хука <span className="code">useState</span>, по умолчанию это будет пустая строка. Передаем созданное <span className="code">value</span> в input через атрибут <span className="code">value</span>. </p>
                 <p className="text">Создаем функции search и <span className="code">onChange</span>. Функция <span className="code">search</span> будет принимать параметром <span className="code">query</span> (ключевые слова для запроса) и получать данные с сервера. <span className="code">onChange</span> будет изменять состояние <span className="code">value</span> и вызывать функцию хука <span className="code">useDebounce</span> передавая в нее <span className="code">e.target.value</span>.</p>
                 <p className="text">Воспользуемся кастомным хуком <span className="code">useDebounce</span>. Создаем переменную <span className="code">debouncedSearch</span>, вызываем хук и параметром передаем функцию <span className="code">search</span> и задержку в 500мс.</p>
